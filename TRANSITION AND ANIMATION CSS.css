@@ -1,0 +1,85 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #6200ea;
+    color: white;
+    animation: slide-down 1s ease-out;
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slide-down {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #03dac6;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .zoom-in {
+    animation: zoomIn 1.5s ease-in;
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
