@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile Page</title>
+  <link rel="stylesheet" href="LANDING PAGE CSS.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Wessley's Web</h1>
+      <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Wessley, a tech enthusiast who loves building interactive websites.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul id="skills-list">
+        <li>Web Development</li>
+        <li>Data Analysis</li>
+        <li>Cybersecurity</li>
+      </ul>
+      <button onclick="toggleSkills()">Show/Hide Skills</button>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="form-message" class="hidden">✅ Message Sent Successfully!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wessley Kiringu Waweru</p>
+  </footer>
+
+  <script src="LANDING PAGE JAVASCRIPT.js"></script>
+</body>
+</html>
