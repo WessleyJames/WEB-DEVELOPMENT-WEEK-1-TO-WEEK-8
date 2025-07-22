@@ -1,0 +1,16 @@
+body { margin:0; font-family:Arial,sans-serif; line-height:1.6; }
+header { display:flex; justify-content:space-between; align-items:center; padding:1rem; background:#228B22; color:#fff; position:relative; }
+.logo { font-size:1.5rem; font-weight:bold; }
+.menu-btn { background:none; border:none; font-size:1.5rem; color:#fff; display:none; }
+.nav-links { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+.nav-links a { color:#fff; text-decoration:none; }
+.hero { padding:2rem; background:#f0f0f0; text-align:center; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; padding:1rem; }
+article { border:1px solid #ddd; border-radius:8px; padding:1rem; background:#fff; text-align:center; }
+footer { text-align:center; padding:1rem; background:#222; color:#fff; margin-top:2rem; }
+form { display:flex; flex-direction:column; gap:0.5rem; max-width:400px; margin:auto; padding:1rem; }
+form input,form textarea { padding:0.5rem; border:1px solid #ccc; border-radius:4px; }
+form button { padding:0.5rem; background:#228B22; color:#fff; border:none; border-radius:4px; cursor:pointer; }
+form button:hover { background:#1e7b1e; }
+.search-box { padding:0.5rem; margin:1rem; width:calc(100% - 2rem); max-width:400px; border:1px solid #ccc; border-radius:4px; }
+@media(max-width:768px){ .menu-btn{display:block;} .nav-links{display:none;flex-direction:column;background:#228B22;position:absolute;top:60px;left:0;width:100%;} .nav-links.open{display:flex;} }
